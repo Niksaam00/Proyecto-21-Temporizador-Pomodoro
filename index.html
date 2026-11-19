@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador Pomodoro</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <h1>Temporizador Pomodoro</h1>
+        </header>
+
+        <section class="temporizador">
+
+            <div class="modos">
+                <button class="activo" id="botonTrabajo">Trabajo</button>
+                <button id="botonDescansoCorto">Descanso corto</button>
+                <button id="botonDescansoLargo">Descanso largo</button>
+            </div>
+
+            <h3 id="nombreSesion">Tiempo de trabajo</h3>
+
+            <div class="reloj">
+                <h2 id="tiempo">25:00</h2>
+            </div>
+
+            <div class="controles">
+                <button id="botonIniciar">Iniciar</button>
+                <button id="botonReiniciar">Reiniciar</button>
+            </div>
+
+            <p class="sesiones">
+                Sesiones completadas: <span id="contadorSesiones">0</span>
+            </p>
+
+            <section class="configuracion">
+
+                <h2>Configuración</h2>
+
+                <div class="entradas">
+
+                    <div>
+                        <label for="tiempoTrabajo">Trabajo</label>
+                        <input type="number" id="tiempoTrabajo" value="25" min="1" max="120">
+                    </div>
+
+                    <div>
+                        <label for="tiempoDescansoCorto">Descanso corto</label>
+                        <input type="number" id="tiempoDescansoCorto" value="5" min="1" max="120">
+                    </div>
+
+                    <div>
+                        <label for="tiempoDescansoLargo">Descanso largo</label>
+                        <input type="number" id="tiempoDescansoLargo" value="15" min="1" max="120">
+                    </div>
+
+                </div>
+
+                <button id="botonGuardar">Guardar tiempos</button>
+
+            </section>
+
+        </section>
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #393030;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #bd3545;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.temporizador {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #e8caca;
+    text-align: center;
+}
+
+.modos {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 11px 15px;
+}
+
+.modos button {
+    background-color: #ffe5e5;
+    color: #bd3545;
+}
+
+.modos button.activo {
+    background-color: #bd3545;
+    color: white;
+}
+
+.temporizador h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.reloj {
+    background-color: #fff0f0;
+    width: 210px;
+    height: 210px;
+    border: 9px solid #e58b95;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reloj h2 {
+    font-size: 48px;
+    color: #bd3545;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+#botonIniciar {
+    background-color: #bd3545;
+    color: white;
+    width: 120px;
+}
+
+#botonReiniciar {
+    background-color: #ffe5e5;
+    color: #bd3545;
+    width: 120px;
+}
+
+.sesiones {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.sesiones span {
+    color: #bd3545;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#mensaje {
+    color: #bd3545;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.configuracion {
+    background-color: #fff0f0;
+    margin-top: 30px;
+    padding: 25px 20px;
+    border-radius: 12px;
+}
+
+.configuracion h2 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.entradas {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.entradas div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 33.33%;
+}
+
+.entradas label {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+
+.entradas input {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #e8b9bf;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#botonGuardar {
+    background-color: #bd3545;
+    color: white;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #bd3545;
+    outline-offset: 3px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #888;
+    font-size: 12px;
+}
+
+@media (max-width: 450px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .temporizador {
+        padding: 25px 12px;
+    }
+
+    .reloj {
+        width: 180px;
+        height: 180px;
+    }
+
+    .reloj h2 {
+        font-size: 40px;
+    }
+
+    .entradas {
+        gap: 6px;
+    }
+
+    .entradas label {
+        font-size: 10px;
+    }
+
+    .modos button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
